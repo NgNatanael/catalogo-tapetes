@@ -70,7 +70,7 @@
     .card p {
       margin-bottom: 1rem;
     }
-    .card button {
+    .card a button {
       padding: 0.5rem 1rem;
       background: #333;
       color: #fff;
@@ -78,7 +78,7 @@
       cursor: pointer;
       border-radius: 3px;
     }
-    .card button:hover {
+    .card a button:hover {
       background: #555;
     }
     /* Formulário de contato */
@@ -134,7 +134,7 @@
   <!-- Cabeçalho -->
   <header>
     <h1>Loja de Tapetes</h1>
-    <p>Catálogo de Tapetes Exclusivos</p>
+    <p>Catálogo de Tapetes de Crochê Artesanal</p>
     <nav>
       <ul>
         <li><a href="#home">Início</a></li>
@@ -147,49 +147,61 @@
 
   <!-- Seção do Catálogo -->
   <section id="catalogo" class="container">
-    <h2>Nosso Catálogo</h2>
+    <h2>Nossos Tapetes</h2>
     <div class="cards">
       <!-- Card 1 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Tapete+1" alt="Tapete Moderno">
-        <h3>Tapete Moderno</h3>
-        <p>Design contemporâneo e cores vibrantes para ambientes modernos.</p>
-        <button onclick="mostrarDetalhes('Tapete Moderno')">Saiba Mais</button>
+        <img src="https://via.placeholder.com/300x200?text=Tapete+1" alt="Tapete 1">
+        <h3>Tapete 1</h3>
+        <p>Tapete de crochê artesanal</p>
+        <a href="https://wa.me/5511989370859" target="_blank">
+          <button>Saiba Mais</button>
+        </a>
       </div>
       <!-- Card 2 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Tapete+2" alt="Tapete Clássico">
-        <h3>Tapete Clássico</h3>
-        <p>Elegância e tradição com detalhes que encantam.</p>
-        <button onclick="mostrarDetalhes('Tapete Clássico')">Saiba Mais</button>
+        <img src="https://via.placeholder.com/300x200?text=Tapete+2" alt="Tapete 2">
+        <h3>Tapete 2</h3>
+        <p>Tapete de crochê artesanal</p>
+        <a href="https://wa.me/5511989370859" target="_blank">
+          <button>Saiba Mais</button>
+        </a>
       </div>
       <!-- Card 3 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Tapete+3" alt="Tapete Artesanal">
-        <h3>Tapete Artesanal</h3>
-        <p>Feito à mão com materiais de alta qualidade e exclusividade.</p>
-        <button onclick="mostrarDetalhes('Tapete Artesanal')">Saiba Mais</button>
+        <img src="https://via.placeholder.com/300x200?text=Tapete+3" alt="Tapete 3">
+        <h3>Tapete 3</h3>
+        <p>Tapete de crochê artesanal</p>
+        <a href="https://wa.me/5511989370859" target="_blank">
+          <button>Saiba Mais</button>
+        </a>
       </div>
       <!-- Card 4 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Tapete+4" alt="Tapete Vintage">
-        <h3>Tapete Vintage</h3>
-        <p>Para ambientes com estilo retrô e charme atemporal.</p>
-        <button onclick="mostrarDetalhes('Tapete Vintage')">Saiba Mais</button>
+        <img src="https://via.placeholder.com/300x200?text=Tapete+4" alt="Tapete 4">
+        <h3>Tapete 4</h3>
+        <p>Tapete de crochê artesanal</p>
+        <a href="https://wa.me/5511989370859" target="_blank">
+          <button>Saiba Mais</button>
+        </a>
       </div>
       <!-- Card 5 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Tapete+5" alt="Tapete Geométrico">
-        <h3>Tapete Geométrico</h3>
-        <p>Formas e cores que se destacam, ideal para ambientes modernos.</p>
-        <button onclick="mostrarDetalhes('Tapete Geométrico')">Saiba Mais</button>
+        <img src="https://via.placeholder.com/300x200?text=Tapete+5" alt="Tapete 5">
+        <h3>Tapete 5</h3>
+        <p>Tapete de crochê artesanal</p>
+        <a href="https://wa.me/5511989370859" target="_blank">
+          <button>Saiba Mais</button>
+        </a>
       </div>
       <!-- Card 6 -->
       <div class="card">
-        <img src="https://via.placeholder.com/300x200?text=Tapete+6" alt="Tapete Personalizado">
-        <h3>Tapete Personalizado</h3>
-        <p>Exclusividade e originalidade, feito sob medida para você.</p>
-        <button onclick="mostrarDetalhes('Tapete Personalizado')">Saiba Mais</button>
+        <img src="https://via.placeholder.com/300x200?text=Tapete+6" alt="Tapete 6">
+        <h3>Tapete 6</h3>
+        <p>Tapete de crochê artesanal</p>
+        <a href="https://wa.me/5511989370859" target="_blank">
+          <button>Saiba Mais</button>
+        </a>
       </div>
     </div>
   </section>
@@ -198,9 +210,8 @@
   <section id="sobre" class="container">
     <h2>Sobre Nós</h2>
     <p>
-      Nossa loja oferece uma ampla variedade de tapetes para todos os estilos e gostos.
-      Trabalhamos com qualidade e exclusividade para transformar o ambiente dos nossos clientes.
-      Venha conhecer nossos produtos e se surpreender!
+      Nossa loja oferece tapetes de crochê artesanais, feitos com dedicação e carinho.
+      Cada peça é única e pensada para trazer aconchego e estilo ao seu ambiente.
     </p>
   </section>
 
@@ -230,11 +241,6 @@
   </footer>
 
   <script>
-    // Função para tratar o clique no botão "Saiba Mais"
-    function mostrarDetalhes(titulo) {
-      alert("Mais detalhes sobre " + titulo + " em breve!");
-    }
-
     // Tratamento simples do formulário de contato
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
