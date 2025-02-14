@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo - Loja de Tapetes</title>
+  <title>Tapetes de Crochê</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
     /* Reset e configurações iniciais */
     * {
@@ -12,15 +14,24 @@
       box-sizing: border-box;
     }
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #FFF8F0;
+      color: #333;
       line-height: 1.6;
     }
     header {
-      background: #333;
+      background: #E27D60;
       color: #fff;
-      padding: 1rem;
+      padding: 1.5rem;
       text-align: center;
+    }
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
     }
     nav ul {
       list-style: none;
@@ -34,6 +45,7 @@
     nav ul li a {
       color: #fff;
       text-decoration: none;
+      font-weight: 600;
     }
     .container {
       width: 90%;
@@ -41,46 +53,56 @@
       margin: 2rem auto;
     }
     h2 {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       text-align: center;
+      font-family: 'Lora', serif;
     }
+    
     /* Cards do catálogo */
     .cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
     }
     .card {
       background: #fff;
       border: 1px solid #ddd;
-      border-radius: 5px;
+      border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: calc(33.333% - 1rem);
+      width: calc(33.333% - 1.5rem);
       padding: 1rem;
       text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
     }
     .card img {
       max-width: 100%;
-      border-radius: 5px;
+      border-radius: 8px;
     }
     .card h3 {
-      margin: 1rem 0 .5rem;
+      margin: 1rem 0 0.5rem;
+      font-family: 'Lora', serif;
     }
     .card p {
       margin-bottom: 1rem;
+      font-size: 0.95rem;
     }
     .card a button {
       padding: 0.5rem 1rem;
-      background: #333;
+      background: #E27D60;
       color: #fff;
       border: none;
       cursor: pointer;
-      border-radius: 3px;
+      border-radius: 4px;
+      font-weight: 600;
     }
     .card a button:hover {
-      background: #555;
+      background: #C15D43;
     }
+    
     /* Formulário de contato */
     form div {
       margin-bottom: 1rem;
@@ -88,36 +110,48 @@
     form label {
       display: block;
       margin-bottom: 0.5rem;
+      font-weight: 600;
     }
     form input, form textarea {
       width: 100%;
       padding: 0.5rem;
       border: 1px solid #ccc;
-      border-radius: 3px;
+      border-radius: 4px;
     }
     form button {
       padding: 0.7rem 1.5rem;
-      background: #333;
+      background: #E27D60;
       color: #fff;
       border: none;
       cursor: pointer;
-      border-radius: 3px;
+      border-radius: 4px;
+      font-weight: 600;
     }
     form button:hover {
-      background: #555;
+      background: #C15D43;
     }
-    /* Footer */
+    
+    /* Seção Nossa História */
+    #sobre {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    /* Rodapé */
     footer {
-      background: #333;
+      background: #E27D60;
       color: #fff;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
     }
+    
     /* Responsividade */
     @media (max-width: 768px) {
       .card {
-        width: calc(50% - 1rem);
+        width: calc(50% - 1.5rem);
       }
     }
     @media (max-width: 480px) {
@@ -133,13 +167,13 @@
 <body>
   <!-- Cabeçalho -->
   <header>
-    <h1>Loja de Tapetes</h1>
-    <p>Catálogo de Tapetes de Crochê Artesanal</p>
+    <h1>Tapetes de Crochê</h1>
+    <p>Artesanato com amor e dedicação</p>
     <nav>
       <ul>
         <li><a href="#home">Início</a></li>
         <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#sobre">Nossa História</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -206,12 +240,14 @@
     </div>
   </section>
 
-  <!-- Seção Sobre -->
+  <!-- Seção Nossa História -->
   <section id="sobre" class="container">
-    <h2>Sobre Nós</h2>
+    <h2>Nossa História</h2>
     <p>
-      Nossa loja oferece tapetes de crochê artesanais, feitos com dedicação e carinho.
-      Cada peça é única e pensada para trazer aconchego e estilo ao seu ambiente.
+      Nossa fundadora é uma mãe dedicada e batalhadora, que transformou seu talento com o crochê em uma forma de arte.
+      Mesmo conciliando as responsabilidades de ser mãe solteira de dois filhos e um emprego, ela encontrou no trabalho artesanal
+      uma maneira de levar amor e aconchego para os lares. Cada tapete é feito com carinho, resiliência e o sonho de proporcionar
+      um ambiente acolhedor para você e sua família.
     </p>
   </section>
 
@@ -237,7 +273,7 @@
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Loja de Tapetes. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Tapetes de Crochê. Todos os direitos reservados.</p>
   </footer>
 
   <script>
