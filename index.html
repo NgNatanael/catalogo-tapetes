@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Loja de Tapetes</title>
+  <style>
+    /* Reset e configurações iniciais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 2rem auto;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    /* Cards do catálogo */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: calc(33.333% - 1rem);
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+    .card h3 {
+      margin: 1rem 0 .5rem;
+    }
+    .card p {
+      margin-bottom: 1rem;
+    }
+    .card button {
+      padding: 0.5rem 1rem;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .card button:hover {
+      background: #555;
+    }
+    /* Formulário de contato */
+    form div {
+      margin-bottom: 1rem;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    form button {
+      padding: 0.7rem 1.5rem;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    form button:hover {
+      background: #555;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 1rem);
+      }
+    }
+    @media (max-width: 480px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Loja de Tapetes</h1>
+    <p>Catálogo de Tapetes Exclusivos</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção do Catálogo -->
+  <section id="catalogo" class="container">
+    <h2>Nosso Catálogo</h2>
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Tapete+1" alt="Tapete Moderno">
+        <h3>Tapete Moderno</h3>
+        <p>Design contemporâneo e cores vibrantes para ambientes modernos.</p>
+        <button onclick="mostrarDetalhes('Tapete Moderno')">Saiba Mais</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Tapete+2" alt="Tapete Clássico">
+        <h3>Tapete Clássico</h3>
+        <p>Elegância e tradição com detalhes que encantam.</p>
+        <button onclick="mostrarDetalhes('Tapete Clássico')">Saiba Mais</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Tapete+3" alt="Tapete Artesanal">
+        <h3>Tapete Artesanal</h3>
+        <p>Feito à mão com materiais de alta qualidade e exclusividade.</p>
+        <button onclick="mostrarDetalhes('Tapete Artesanal')">Saiba Mais</button>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Tapete+4" alt="Tapete Vintage">
+        <h3>Tapete Vintage</h3>
+        <p>Para ambientes com estilo retrô e charme atemporal.</p>
+        <button onclick="mostrarDetalhes('Tapete Vintage')">Saiba Mais</button>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Tapete+5" alt="Tapete Geométrico">
+        <h3>Tapete Geométrico</h3>
+        <p>Formas e cores que se destacam, ideal para ambientes modernos.</p>
+        <button onclick="mostrarDetalhes('Tapete Geométrico')">Saiba Mais</button>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200?text=Tapete+6" alt="Tapete Personalizado">
+        <h3>Tapete Personalizado</h3>
+        <p>Exclusividade e originalidade, feito sob medida para você.</p>
+        <button onclick="mostrarDetalhes('Tapete Personalizado')">Saiba Mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="container">
+    <h2>Sobre Nós</h2>
+    <p>
+      Nossa loja oferece uma ampla variedade de tapetes para todos os estilos e gostos.
+      Trabalhamos com qualidade e exclusividade para transformar o ambiente dos nossos clientes.
+      Venha conhecer nossos produtos e se surpreender!
+    </p>
+  </section>
+
+  <!-- Seção de Contato -->
+  <section id="contato" class="container">
+    <h2>Contato</h2>
+    <form id="contactForm">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Loja de Tapetes. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Função para tratar o clique no botão "Saiba Mais"
+    function mostrarDetalhes(titulo) {
+      alert("Mais detalhes sobre " + titulo + " em breve!");
+    }
+
+    // Tratamento simples do formulário de contato
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value;
+      alert('Obrigado por entrar em contato, ' + nome + '!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
